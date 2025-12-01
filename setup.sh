@@ -19,5 +19,6 @@ echo
 PASSPHRASE=${PASSPHRASE:-tunnelproxy}
 
 # Pass everything to scripts
+chmod +x ./sub/*
 bash ./sub/setup-sing-box.sh --url "$XRAY_URL"
 bash ./sub/install-gateway.sh --iface "$WIFI_IFACE" --ssid "$SSID" --passphrase "$PASSPHRASE"
