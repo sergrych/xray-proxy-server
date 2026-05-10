@@ -13,7 +13,7 @@
 
 ## 🚀 Быстрый старт
 
-### 1. Клонируй репозиторий на устройство с Linux (Ubuntu 22/24+)
+### 1. Клонируем репозиторий на устройство с Linux (Ubuntu 22/24+)
 
 ```bash
 git clone https://github.com/your-user/xray-wifi-proxy.git
