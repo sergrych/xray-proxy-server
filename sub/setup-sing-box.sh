@@ -132,7 +132,17 @@ $( [[ $PROTO == "trojan" ]] && echo "      \"password\": \"$PASSWORD\",")
 $( [[ $PROTO == "vmess" || $PROTO == "vless" ]] && echo "      \"uuid\": \"$UUID\",")
 $( [[ $PROTO == "vmess" ]] && echo "      \"alter_id\": $ALTERID,")
       "tls": {
-        "enabled": $TLS_ENABLED
+        "enabled": true,
+        "server_name": "$SERVER_NAME",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "$PUBLIC_KEY",
+          "short_id": "$SHORT_ID"
+        }
       }
     },
     {
